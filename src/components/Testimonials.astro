@@ -1,0 +1,166 @@
+---
+---
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag">Depoimentos</p>
+      <h2 class="section-heading">
+        Quem migrou para a Bobbin<br />não voltou atrás
+      </h2>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="t-meta">
+          <div class="t-avatar t-av1" aria-hidden="true"></div>
+          <div>
+            <p class="t-name">Sofia M.</p>
+            <p class="t-role">Head of Growth · HealWave</p>
+          </div>
+        </div>
+        <blockquote class="t-quote">
+          "Fomos de ciclos de produção de 2 semanas para 2 horas. A Bobbin não só
+          nos economizou tempo — mudou completamente a forma como pensamos em lançamentos."
+        </blockquote>
+        <div class="t-metric">
+          <span class="t-metric-value">+195%</span>
+          <span class="t-metric-label">Aumento de receita</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card t-featured">
+        <div class="t-meta">
+          <div class="t-avatar t-av1" aria-hidden="true"></div>
+          <div>
+            <p class="t-name">James P.</p>
+            <p class="t-role">Founder · ClickScale</p>
+          </div>
+        </div>
+        <blockquote class="t-quote">
+          "A qualidade da sincronização labial e das emoções é incomparável. Você juraria
+          que são atores reais. Nosso ROAS dobrou só no primeiro mês."
+        </blockquote>
+        <div class="t-metric">
+          <span class="t-metric-value">2×</span>
+          <span class="t-metric-label">Melhora no ROAS</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="t-meta">
+          <div class="t-avatar t-av1" aria-hidden="true"></div>
+          <div>
+            <p class="t-name">Priya T.</p>
+            <p class="t-role">Performance Lead · Moonlit</p>
+          </div>
+        </div>
+        <blockquote class="t-quote">
+          "O UGC gerado pela Bobbin é genuinamente indistinguível do conteúdo orgânico.
+          É a primeira ferramenta de anúncios com IA que não parece IA."
+        </blockquote>
+        <div class="t-metric">
+          <span class="t-metric-value">10×</span>
+          <span class="t-metric-label">Redução nos custos de produção</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    padding: 104px 0;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    background: var(--color-bg-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+
+  .t-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .t-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-circle);
+    flex-shrink: 0;
+  }
+
+  .t-av1 { background: linear-gradient(135deg, #FF2D2D 0%, #FF2D2D 100%); }
+
+  .t-name {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--text-sm);
+    color: var(--color-text);
+  }
+
+
+  .t-role {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    margin-top: 2px;
+  }
+
+
+  .t-quote {
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    color: var(--color-text-secondary);
+    font-style: italic;
+    flex: 1;
+  }
+
+
+  .t-metric {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+  }
+
+
+  .t-metric-value {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-2xl);
+    letter-spacing: var(--tracking-tight-1);
+    color: var(--color-accent);
+  }
+
+  .t-metric-label {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    line-height: var(--leading-normal);
+  }
+
+
+  @media (max-width: 1024px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+  }
+</style>

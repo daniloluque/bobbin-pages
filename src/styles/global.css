@@ -1,0 +1,142 @@
+/* ── CONTAINER ─────────────────────────────────────────── */
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+}
+
+/* ── WORDMARK ──────────────────────────────────────────── */
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  font-size: 22px;
+  letter-spacing: var(--tracking-tight-1);
+  color: var(--color-text);
+  display: inline-flex;
+  align-items: baseline;
+  line-height: 1;
+}
+
+.wordmark-i {
+  position: relative;
+  display: inline-block;
+}
+
+.wordmark-i::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: var(--color-rec-500);
+  border-radius: var(--radius-circle);
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ── BUTTONS ───────────────────────────────────────────── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-full);
+  padding: 10px 20px;
+  transition: background var(--duration-base) var(--ease-default),
+              color var(--duration-base) var(--ease-default),
+              border-color var(--duration-base) var(--ease-default);
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+}
+.btn-primary:hover { background: var(--color-accent-hover); }
+
+.btn-ghost {
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+.btn-ghost:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-accent-muted);
+}
+
+.btn-outline {
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+.btn-outline:hover {
+  border-color: var(--color-text);
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: var(--text-base);
+}
+
+.btn-xl {
+  padding: 16px 40px;
+  font-size: var(--text-lg);
+}
+
+/* ── REC DOT ───────────────────────────────────────────── */
+
+.rec-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--color-rec-500);
+  border-radius: var(--radius-circle);
+  animation: var(--anim-rec-blink);
+  flex-shrink: 0;
+}
+
+/* ── SECTION COMMON ────────────────────────────────────── */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-mono-md);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 14px;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-4xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight-1);
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+  color: var(--color-text-muted);
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* ── RESPONSIVE ────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .container { padding: 0 24px; }
+  .section-heading { font-size: var(--text-3xl); }
+}

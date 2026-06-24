@@ -1,0 +1,192 @@
+---
+---
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag">Preços</p>
+      <h2 class="section-heading">Comece grátis. Escale rápido.</h2>
+      <p class="section-desc">Sem cartão de crédito. Cancele quando quiser.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card">
+        <p class="plan-name">Starter</p>
+        <div class="plan-price">
+          <span class="price-amount">Grátis</span>
+        </div>
+        <p class="plan-desc">Para criadores explorando as possibilidades.</p>
+        <ul class="plan-features">
+          <li>5 vídeos por mês</li>
+          <li>10 atores de IA</li>
+          <li>Exportação em 720p</li>
+          <li>Marca d'água Bobbin</li>
+        </ul>
+        <a href="#" class="btn btn-outline plan-cta">Começar agora</a>
+      </div>
+
+      <div class="pricing-card p-featured">
+        <p class="plan-badge">Mais popular</p>
+        <p class="plan-name">Growth</p>
+        <div class="plan-price">
+          <span class="price-amount">$49</span>
+          <span class="price-period">/ mês</span>
+        </div>
+        <p class="plan-desc">Para performance marketers prontos para escalar.</p>
+        <ul class="plan-features">
+          <li>50 vídeos por mês</li>
+          <li>200+ atores de IA</li>
+          <li>Exportação em 1080p</li>
+          <li>Sem marca d'água</li>
+          <li>Renderização prioritária</li>
+          <li>35+ idiomas</li>
+        </ul>
+        <a href="#" class="btn btn-primary plan-cta">Iniciar teste grátis</a>
+      </div>
+
+      <div class="pricing-card">
+        <p class="plan-name">Scale</p>
+        <div class="plan-price">
+          <span class="price-amount">$149</span>
+          <span class="price-period">/ mês</span>
+        </div>
+        <p class="plan-desc">Para agências e marcas de alto volume.</p>
+        <ul class="plan-features">
+          <li>Vídeos ilimitados</li>
+          <li>Todos os 500+ atores de IA</li>
+          <li>Exportação em 4K</li>
+          <li>Assentos para equipe</li>
+          <li>API de analytics</li>
+          <li>Suporte dedicado</li>
+        </ul>
+        <a href="#" class="btn btn-outline plan-cta">Falar com vendas</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .pricing {
+    padding: 104px 0;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+
+  .pricing-card {
+    background: var(--color-bg-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  .p-featured {
+    background: var(--color-bg-inverted);
+    border-color: transparent;
+    padding: 52px 36px;
+  }
+
+  .plan-badge {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-accent);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: var(--text-2xs);
+    letter-spacing: var(--tracking-mono-sm);
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+  }
+
+  .plan-name {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-xl);
+    letter-spacing: var(--tracking-tight-1);
+    color: var(--color-text);
+  }
+
+  .p-featured .plan-name { color: var(--color-paper-100); }
+
+  .plan-price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  .price-amount {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-4xl);
+    letter-spacing: var(--tracking-tight-2);
+    color: var(--color-text);
+    line-height: 1;
+  }
+
+  .p-featured .price-amount { color: var(--color-paper-100); }
+
+  .price-period {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+  }
+
+  .p-featured .price-period { color: rgba(244, 242, 236, 0.45); }
+
+  .plan-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--leading-normal);
+  }
+
+  .p-featured .plan-desc { color: rgba(244, 242, 236, 0.45); }
+
+  .plan-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+
+  .plan-features li {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    padding-left: 20px;
+    position: relative;
+    line-height: var(--leading-normal);
+  }
+
+  .plan-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .p-featured .plan-features li { color: rgba(244, 242, 236, 0.7); }
+
+  .plan-cta {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 1024px) {
+    .pricing-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+    .p-featured { padding: 44px 36px; }
+  }
+</style>

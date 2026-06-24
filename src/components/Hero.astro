@@ -1,0 +1,239 @@
+---
+---
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-badge">
+      <span class="rec-dot"></span>
+      <span class="badge-label">Seedance 2.0 disponível</span>
+    </div>
+
+    <h1 class="hero-heading">
+      Crie anúncios que<br />realmente convertem
+    </h1>
+
+    <p class="hero-sub">
+      Atores de IA. Emoções reais. Resultados em minutos.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#" class="btn btn-primary btn-lg">Criar meu primeiro anúncio</a>
+      <a href="#" class="btn btn-ghost btn-lg">Ver demonstração →</a>
+    </div>
+
+    <div class="hero-proof">
+      <div class="proof-avatars" aria-hidden="true">
+        <span class="avatar av1"></span>
+        <span class="avatar av1"></span>
+        <span class="avatar av1"></span>
+        <span class="avatar av1"></span>
+      </div>
+      <p>Usado por mais de <strong>2.400</strong> performance marketers</p>
+    </div>
+  </div>
+
+  <div class="video-showcase" aria-hidden="true">
+    <div class="video-track">
+      <div class="video-card vc-1"><span class="vc-time">0:28</span><div class="vc-caption">Meu produto favorito do mês ✨</div></div>
+      <div class="video-card vc-2"><span class="vc-time">0:45</span><div class="vc-caption">POV: anúncio que converte 10×</div></div>
+      <div class="video-card vc-3"><span class="vc-time">1:02</span><div class="vc-caption">Antes e depois em 30 dias 👀</div></div>
+      <div class="video-card vc-4"><span class="vc-time">0:33</span><div class="vc-caption">Esse produto mudou meu negócio</div></div>
+      <div class="video-card vc-5"><span class="vc-time">0:57</span><div class="vc-caption">3 razões pra testar hoje</div></div>
+      <div class="video-card vc-6"><span class="vc-time">1:15</span><div class="vc-caption">Testei por uma semana inteira</div></div>
+      <div class="video-card vc-7"><span class="vc-time">0:42</span><div class="vc-caption">Isso triplicou minhas vendas</div></div>
+      <div class="video-card vc-8"><span class="vc-time">0:38</span><div class="vc-caption">14 dias depois... resultado real</div></div>
+      <!-- duplicate for seamless loop -->
+      <div class="video-card vc-1"><span class="vc-time">0:28</span><div class="vc-caption">Meu produto favorito do mês ✨</div></div>
+      <div class="video-card vc-2"><span class="vc-time">0:45</span><div class="vc-caption">POV: anúncio que converte 10×</div></div>
+      <div class="video-card vc-3"><span class="vc-time">1:02</span><div class="vc-caption">Antes e depois em 30 dias 👀</div></div>
+      <div class="video-card vc-4"><span class="vc-time">0:33</span><div class="vc-caption">Esse produto mudou meu negócio</div></div>
+      <div class="video-card vc-5"><span class="vc-time">0:57</span><div class="vc-caption">3 razões pra testar hoje</div></div>
+      <div class="video-card vc-6"><span class="vc-time">1:15</span><div class="vc-caption">Testei por uma semana inteira</div></div>
+      <div class="video-card vc-7"><span class="vc-time">0:42</span><div class="vc-caption">Isso triplicou minhas vendas</div></div>
+      <div class="video-card vc-8"><span class="vc-time">0:38</span><div class="vc-caption">14 dias depois... resultado real</div></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 96px 0 0;
+  }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 45, 45, 0.10);
+    border: 1px solid rgba(255, 45, 45, 0.28);
+    border-radius: var(--radius-full);
+    padding: 6px 16px;
+    margin-bottom: 36px;
+  }
+
+  .badge-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: var(--tracking-mono-sm);
+    text-transform: uppercase;
+    color: var(--color-rec-500);
+  }
+
+  .hero-heading {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    font-size: clamp(48px, 7.5vw, 72px);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight-2);
+    color: var(--color-text);
+    margin-bottom: 18px;
+  }
+
+  .hero-sub {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--text-xl);
+    letter-spacing: var(--tracking-snug);
+    color: var(--color-text-muted);
+    margin-bottom: 14px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-proof {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--text-sm);
+    color: var(--color-text-subtle);
+  }
+
+  .hero-proof strong {
+    color: var(--color-text-muted);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .proof-avatars {
+    display: flex;
+  }
+
+  .avatar {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-circle);
+    border: 2px solid var(--color-ink-950);
+    margin-right: -7px;
+  }
+
+  .av1 { background: #FF2D2D; }
+  .av2 { background: #7b4a8a; }
+  .av3 { background: #8a6b3a; }
+  .av4 { background: #3a8a6b; }
+
+  /* ── Video Showcase ─────────────────────────────────────── */
+
+  .video-showcase {
+    margin-top: 72px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 5%, #000 95%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 5%, #000 95%, transparent 100%);
+  }
+
+  .video-track {
+    display: flex;
+    gap: 8px;
+    width: max-content;
+    animation: video-marquee 40s linear infinite;
+  }
+
+  .video-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes video-marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(-50% - 4px)); }
+  }
+
+  .video-card {
+    position: relative;
+    width: 226px;
+    height: 402px;
+    border-radius: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  /* Soft light suggesting a subject */
+  .video-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 70% at 50% 32%, rgba(255, 255, 255, 0.16) 0%, transparent 60%),
+      linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+    z-index: 1;
+  }
+
+  .vc-time {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.52);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    padding: 3px 7px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+  .vc-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 12px 13px;
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 11.5px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.4;
+    z-index: 2;
+  }
+
+  /* Card backgrounds — variações da cor REC */
+  .vc-1 { background: linear-gradient(170deg, #ff5a5a 0%, #e02222 45%, #7a0a0a 100%); }
+  .vc-2 { background: linear-gradient(170deg, #ff2d2d 0%, #c41a1a 45%, #550808 100%); }
+  .vc-3 { background: linear-gradient(170deg, #ff7040 0%, #d42010 45%, #6a0808 100%); }
+  .vc-4 { background: linear-gradient(170deg, #e01818 0%, #a80e0e 45%, #3a0505 100%); }
+  .vc-5 { background: linear-gradient(170deg, #ff4040 0%, #cc1010 45%, #500606 100%); }
+  .vc-6 { background: linear-gradient(170deg, #ff3030 0%, #b81515 45%, #480808 100%); }
+  .vc-7 { background: linear-gradient(170deg, #ff6050 0%, #d01818 45%, #5a0808 100%); }
+  .vc-8 { background: linear-gradient(170deg, #cc1a1a 0%, #900e0e 45%, #300505 100%); }
+
+  @media (max-width: 768px) {
+    .hero { padding: 64px 0 0; }
+    .hero-heading { font-size: clamp(36px, 11vw, 56px); }
+    .video-showcase { margin-top: 48px; padding-bottom: 56px; }
+    .video-card { width: 156px; height: 276px; }
+  }
+</style>

@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Pricing from '../components/Pricing.astro';
+import FinalCta from '../components/FinalCta.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Bobbin — Crie anúncios em vídeo que realmente convertem" description="Crie anúncios em vídeo que realmente convertem — atores de IA, emoções reais, resultados em minutos.">
+
+  <div class="above-fold" data-theme="dark">
+    <Nav />
+    <Hero />
+  </div>
+
+  <div class="below-fold" data-theme="light">
+    <Features />
+    <HowItWorks />
+    <Testimonials />
+    <Pricing />
+    <FinalCta />
+    <Footer />
+  </div>
+
+</Layout>
+
+<style>
+  .below-fold {
+    background-color: var(--color-bg);
+  }
+
+  .above-fold {
+    background-color: var(--color-bg);
+    background-image: var(--glow-rec-cover-combined), var(--grid-bg-image);
+    background-size:
+      100% 100%, 100% 100%,
+      var(--grid-cell-size) var(--grid-cell-size),
+      var(--grid-cell-size) var(--grid-cell-size);
+    background-repeat: no-repeat, no-repeat, repeat, repeat;
+  }
+</style>

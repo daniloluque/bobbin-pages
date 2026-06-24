@@ -1,0 +1,85 @@
+---
+---
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="wordmark" aria-label="Bobbin início">
+      <img src="/bobbin-logo-paper.svg" alt="bobbin" class="wordmark-logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#features">Recursos</a></li>
+      <li><a href="#how-it-works">Como funciona</a></li>
+      <li><a href="#pricing">Preços</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#" class="nav-login">Entrar</a>
+      <a href="#" class="btn btn-primary">Começar grátis</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--color-bg-overlay);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--color-border-inverted);
+  }
+
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    position: relative;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav-links a {
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    transition: color var(--duration-fast);
+  }
+  .nav-links a:hover { color: var(--color-text); }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  .nav-login {
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+    padding: 8px 14px;
+    transition: color var(--duration-fast);
+  }
+  .nav-login:hover { color: var(--color-text); }
+
+  .wordmark-logo {
+    height: 80px;
+    width: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-login  { display: none; }
+  }
+</style>

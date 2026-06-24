@@ -1,0 +1,66 @@
+---
+---
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat">
+      <p class="stat-number">1B+</p>
+      <p class="stat-label">Visualizações de anúncios geradas</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number">10×</p>
+      <p class="stat-label">Redução nos custos de produção</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number">35+</p>
+      <p class="stat-label">Idiomas suportados</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number">2.400+</p>
+      <p class="stat-label">Marcas confiam na Bobbin</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .stats {
+    padding: 80px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--color-border);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .stat {
+    background: var(--color-bg);
+    padding: 40px 32px;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-4xl);
+    letter-spacing: var(--tracking-tight-2);
+    color: var(--color-text);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--leading-normal);
+  }
+
+  @media (max-width: 1024px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>

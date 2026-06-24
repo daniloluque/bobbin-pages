@@ -1,0 +1,65 @@
+---
+---
+
+<section class="logo-strip">
+  <div class="container">
+    <p class="strip-label">Impulsionando campanhas em</p>
+    <div class="strip-logos">
+      <span class="brand-name">HealWave</span>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <span class="brand-name">ClickScale</span>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <span class="brand-name">Moonlit</span>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <span class="brand-name">Quiet Labs</span>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <span class="brand-name">CleanFox</span>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <span class="brand-name">Bending Spoon</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .logo-strip {
+    padding: 44px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .strip-label {
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: var(--tracking-mono-md);
+    text-transform: uppercase;
+    color: var(--color-text-subtle);
+    margin-bottom: 20px;
+  }
+
+  .strip-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .brand-name {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--text-md);
+    letter-spacing: var(--tracking-tight-1);
+    color: var(--color-text-subtle);
+  }
+
+  .brand-sep {
+    color: var(--color-border-strong);
+    font-size: var(--text-xl);
+    line-height: 1;
+  }
+
+  @media (max-width: 768px) {
+    .strip-logos { gap: 12px; }
+    .brand-sep   { display: none; }
+  }
+</style>

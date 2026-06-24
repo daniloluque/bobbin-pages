@@ -1,0 +1,349 @@
+/* ============================================================
+   BOBBIN — Design Tokens  v1.1  ·  Jun 2026
+   Fonte: bobbin-brand-identity.html (Brand System v1.0)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+
+  /* ── CORES ─────────────────────────────────────────────── */
+
+  /* Paleta primitiva */
+  --color-rec-500:    #FF2D2D;   /* Vermelho REC · oklch 0.645 0.243 27  */
+  --color-ink-950:    #0E0E0F;   /* Ink          · oklch 0.16  0.004 270 */
+  --color-ink-800:    #2B2B2C;
+  --color-ink-700:    #3A3A3B;   /* Graphite                              */
+  --color-ink-500:    #7A776E;
+  --color-ink-400:    #9A968B;   /* Ash                                   */
+  --color-paper-50:   #FBFAF6;   /* Paper Light                           */
+  --color-paper-100:  #F4F2EC;   /* Paper        · oklch 0.955 0.008 95  */
+  --color-paper-200:  #E4E0D6;   /* Hairline                              */
+  --color-paper-300:  #DAD6CC;   /* Border                                */
+
+  /* ── Semânticos — modo CLARO (padrão) ── */
+
+  --color-bg:              var(--color-paper-100);
+  --color-bg-raised:       var(--color-paper-50);
+  --color-bg-overlay:      rgba(244, 242, 236, 0.55);
+
+  --color-text:            var(--color-ink-950);
+  --color-text-secondary:  var(--color-ink-800);
+  --color-text-muted:      var(--color-ink-500);
+  --color-text-subtle:     var(--color-ink-400);
+  --color-text-on-accent:  #ffffff;
+
+  --color-border:          var(--color-paper-300);
+  --color-border-strong:   var(--color-paper-200);
+
+  --color-accent:          var(--color-rec-500);
+  --color-accent-hover:    #E02222;
+  --color-accent-active:   #C41A1A;
+  --color-accent-muted:    rgba(255, 45, 45, 0.18);
+
+  --color-text-disabled:   var(--color-ink-400);
+  --color-bg-disabled:     var(--color-paper-200);
+
+  --color-success:         #1B6B42;
+  --color-success-muted:   rgba(27, 107, 66, 0.12);
+  --color-warning:         #A85200;
+  --color-warning-muted:   rgba(168, 82, 0, 0.12);
+  --color-error:           var(--color-rec-500);
+  --color-error-muted:     var(--color-accent-muted);
+
+  --shadow-sm:    0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md:    0 1px 4px rgba(0, 0, 0, 0.12);
+  --shadow-focus: 0 0 0 6px rgba(255, 45, 45, 0.18);
+
+  /* ── Superfícies invariantes ─────────────────────────────
+     Não mudam com o tema. Usadas quando se quer quebrar
+     deliberadamente o modo atual (ex: hero escuro numa
+     página clara, ou card claro numa página escura).       */
+  --color-bg-inverted:      var(--color-ink-950);
+  --color-text-inverted:    var(--color-paper-100);
+  --color-border-inverted:  rgba(244, 242, 236, 0.14);
+
+  /* ── TIPOGRAFIA ────────────────────────────────────────── */
+
+  /* Famílias */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono:    'Space Mono',    monospace;
+
+  /* Pesos */
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  /* Escala de tamanho */
+  --text-2xs:  11px;
+  --text-xs:   12px;
+  --text-sm:   13px;
+  --text-base: 15px;
+  --text-md:   16px;
+  --text-lg:   18px;
+  --text-xl:   20px;
+  --text-2xl:  24px;
+  --text-3xl:  30px;
+  --text-4xl:  38px;
+  --text-5xl:  46px;
+  --text-6xl:  56px;
+  --text-7xl:  72px;
+  --text-8xl:  96px;
+
+  /* Responsivo (clamp) */
+  --text-display: clamp(90px, 17vw, 260px);
+  --text-heading: clamp(40px, 5vw, 68px);
+
+  /* Espaçamento entre letras */
+  --tracking-tight-4:  -0.055em;  /* display wordmark */
+  --tracking-tight-3:  -0.05em;
+  --tracking-tight-2:  -0.04em;
+  --tracking-tight-1:  -0.035em;
+  --tracking-snug:     -0.02em;
+  --tracking-normal:    0em;
+  --tracking-wide-1:    0.01em;
+  --tracking-wide-2:    0.04em;
+  --tracking-wide-3:    0.10em;
+  --tracking-mono-sm:   0.12em;   /* labels técnicos */
+  --tracking-mono-md:   0.18em;   /* section tags    */
+  --tracking-mono-lg:   0.22em;
+  --tracking-mono-xl:   0.32em;
+
+  /* Altura de linha */
+  --leading-tight-2:  0.86;   /* wordmark display     */
+  --leading-tight-1:  0.90;   /* display secundário   */
+  --leading-snug:     0.98;   /* títulos grandes      */
+  --leading-none:     1;
+  --leading-normal:   1.6;    /* corpo de texto       */
+  --leading-relaxed:  1.62;
+  --leading-loose:    1.7;
+  --leading-mono:     1.9;    /* metadados / mono     */
+
+  /* ── ESPAÇAMENTO ───────────────────────────────────────── */
+
+  --space-1:    4px;
+  --space-2:    8px;
+  --space-3:    10px;
+  --space-4:    12px;
+  --space-5:    14px;
+  --space-6:    16px;
+  --space-7:    20px;
+  --space-8:    22px;
+  --space-9:    24px;
+  --space-10:   26px;
+  --space-11:   28px;
+  --space-12:   34px;
+  --space-13:   36px;
+  --space-14:   40px;
+  --space-15:   44px;
+  --space-16:   48px;
+  --space-17:   56px;
+  --space-18:   80px;
+  --space-19:   90px;
+  --space-20:  120px;
+  --space-21:  130px;
+
+  /* Aliases semânticos */
+  --space-xs:      var(--space-2);   /*  8px */
+  --space-sm:      var(--space-4);   /* 12px */
+  --space-md:      var(--space-9);   /* 24px */
+  --space-lg:      var(--space-14);  /* 40px */
+  --space-xl:      var(--space-17);  /* 56px */
+  --space-section: var(--space-19);  /* 90px */
+  --space-page:    var(--space-20);  /* 120px */
+
+  /* Container */
+  --container-max: 1240px;
+  --container-px:  var(--space-17);  /* 56px */
+
+  /* ── BORDAS E RAIOS ────────────────────────────────────── */
+
+  --radius-sm:     6px;
+  --radius-md:     8px;
+  --radius-full:   999px;
+  --radius-circle: 50%;
+
+  --border-width:       1px;
+  --border-width-thick: 3px;
+
+  /* ── Z-INDEX ───────────────────────────────────────────── */
+
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-modal:   1000;
+  --z-toast:   9999;
+
+  /* ── TRANSIÇÕES ────────────────────────────────────────── */
+
+  --duration-fast:   120ms;
+  --duration-base:   200ms;
+  --duration-slow:   320ms;
+  --ease-default:    cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:        cubic-bezier(0, 0, 0.2, 1);
+  --ease-in:         cubic-bezier(0.4, 0, 1, 1);
+
+  /* ── ANIMAÇÕES DE MARCA ────────────────────────────────── */
+  --anim-rec-blink: recblink 1.3s steps(1) infinite;
+
+  /* ── TEXTURA · GRID DE CAPTURA ─────────────────────────
+     Malha quadriculada de 56 px — referência a papel de set
+     e timeline de edição. Sempre centralizada, nunca esticada.
+     Use sobre fundo --color-ink-950 (dark UI/hero sections).  */
+
+  --grid-cell-size:   56px;
+  --grid-line-color:  rgba(244, 242, 236, 0.06);  /* 6% paper sobre ink */
+  --grid-line-width:  1px;
+
+  /* Valor pronto para background-image + background-size */
+  --grid-bg-image:
+    linear-gradient(var(--grid-line-color) var(--grid-line-width), transparent var(--grid-line-width)),
+    linear-gradient(90deg, var(--grid-line-color) var(--grid-line-width), transparent var(--grid-line-width));
+  --grid-bg-size: var(--grid-cell-size) var(--grid-cell-size);
+
+  /* Variante mais sutil (cover/capa) — 5% de opacidade */
+  --grid-line-color-subtle: rgba(244, 242, 236, 0.05);
+  --grid-bg-image-subtle:
+    linear-gradient(var(--grid-line-color-subtle) var(--grid-line-width), transparent var(--grid-line-width)),
+    linear-gradient(90deg, var(--grid-line-color-subtle) var(--grid-line-width), transparent var(--grid-line-width));
+
+  /* ── TEXTURA · BRILHO VERMELHO (AMBIENT REC GLOW) ──────
+     Luz difusa vermelha que remete ao indicador de gravação.
+     Dois focos assimétricos: canto inferior-direito (forte)
+     e canto superior-esquerdo (suave). Aplique como segundo
+     layer de background, sobre a malha do grid.             */
+
+  /* Variante padrão — seções escuras internas */
+  --glow-rec-primary:   radial-gradient(55% 70% at 90% 85%, rgba(255, 45, 45, 0.28), transparent 60%);
+  --glow-rec-secondary: radial-gradient(45% 55% at  8% 14%, rgba(255, 45, 45, 0.14), transparent 60%);
+  --glow-rec-combined:  var(--glow-rec-primary), var(--glow-rec-secondary);
+
+  /* Variante cover/capa — hero da página, levemente mais suave */
+  --glow-rec-cover-primary:   radial-gradient(60% 70% at 92% 80%, rgba(255, 45, 45, 0.22), transparent 60%);
+  --glow-rec-cover-secondary: radial-gradient(50% 55% at  6% 12%, rgba(255, 45, 45, 0.12), transparent 60%);
+  --glow-rec-cover-combined:  var(--glow-rec-cover-primary), var(--glow-rec-cover-secondary);
+
+  /* ── WORDMARK · PONTO REC (tittle) ─────────────────────
+     O "i" do wordmark usa o caractere dotless-i (ı U+0131)
+     com um círculo posicionado como pseudo-ponto de REC.   */
+  --wordmark-dot-size:       0.155em;   /* diâmetro relativo ao font-size  */
+  --wordmark-dot-top:        0.05em;    /* distância do topo da linha       */
+  --wordmark-dot-left:       66%;       /* posição horizontal sobre o ı     */
+  --wordmark-dot-color:      var(--color-rec-500);
+  --wordmark-dot-glow:       0 0 0 6px rgba(255, 45, 45, 0.18); /* anatomy */
+}
+
+@keyframes recblink {
+  0%,  55% { opacity: 1;   }
+  56%, 100% { opacity: 0.2; }
+}
+
+/* ============================================================
+   MODO ESCURO — apenas os tokens semânticos são reinvertidos.
+   Primitivos e superfícies invariantes permanecem inalterados.
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:              var(--color-ink-950);
+    --color-bg-raised:       var(--color-ink-800);
+    --color-bg-overlay:      rgba(14, 14, 15, 0.55);
+
+    --color-text:            var(--color-paper-100);
+    --color-text-secondary:  rgba(244, 242, 236, 0.80);
+    --color-text-muted:      rgba(244, 242, 236, 0.50);
+    --color-text-subtle:     rgba(244, 242, 236, 0.35);
+    --color-text-on-accent:  #ffffff;
+
+    --color-border:          rgba(244, 242, 236, 0.14);
+    --color-border-strong:   rgba(244, 242, 236, 0.24);
+
+    --color-accent:          var(--color-rec-500);
+    --color-accent-hover:    #FF4D4D;
+    --color-accent-active:   #E02222;
+    --color-accent-muted:    rgba(255, 45, 45, 0.22);
+
+    --color-text-disabled:   rgba(244, 242, 236, 0.28);
+    --color-bg-disabled:     rgba(244, 242, 236, 0.06);
+
+    --color-success:         #2EAB6C;
+    --color-success-muted:   rgba(46, 171, 108, 0.14);
+    --color-warning:         #F07B1A;
+    --color-warning-muted:   rgba(240, 123, 26, 0.14);
+    --color-error:           var(--color-rec-500);
+    --color-error-muted:     var(--color-accent-muted);
+
+    --shadow-sm:    0 1px 6px rgba(0, 0, 0, 0.40);
+    --shadow-md:    0 2px 8px rgba(0, 0, 0, 0.55);
+    --shadow-focus: 0 0 0 6px rgba(255, 45, 45, 0.28);
+  }
+}
+
+[data-theme="dark"] {
+  --color-bg:              var(--color-ink-950);
+  --color-bg-raised:       var(--color-ink-800);
+  --color-bg-overlay:      rgba(14, 14, 15, 0.55);
+
+  --color-text:            var(--color-paper-100);
+  --color-text-secondary:  rgba(244, 242, 236, 0.80);
+  --color-text-muted:      rgba(244, 242, 236, 0.50);
+  --color-text-subtle:     rgba(244, 242, 236, 0.35);
+  --color-text-on-accent:  #ffffff;
+
+  --color-border:          rgba(244, 242, 236, 0.14);
+  --color-border-strong:   rgba(244, 242, 236, 0.24);
+
+  --color-accent:          var(--color-rec-500);
+  --color-accent-hover:    #FF4D4D;
+  --color-accent-active:   #E02222;
+  --color-accent-muted:    rgba(255, 45, 45, 0.22);
+
+  --color-text-disabled:   rgba(244, 242, 236, 0.28);
+  --color-bg-disabled:     rgba(244, 242, 236, 0.06);
+
+  --color-success:         #2EAB6C;
+  --color-success-muted:   rgba(46, 171, 108, 0.14);
+  --color-warning:         #F07B1A;
+  --color-warning-muted:   rgba(240, 123, 26, 0.14);
+  --color-error:           var(--color-rec-500);
+  --color-error-muted:     var(--color-accent-muted);
+
+  --shadow-sm:    0 1px 6px rgba(0, 0, 0, 0.40);
+  --shadow-md:    0 2px 8px rgba(0, 0, 0, 0.55);
+  --shadow-focus: 0 0 0 6px rgba(255, 45, 45, 0.28);
+}
+
+[data-theme="light"] {
+  --color-bg:              var(--color-paper-100);
+  --color-bg-raised:       var(--color-paper-50);
+  --color-bg-overlay:      rgba(244, 242, 236, 0.92);
+
+  --color-text:            var(--color-ink-950);
+  --color-text-secondary:  var(--color-ink-800);
+  --color-text-muted:      var(--color-ink-500);
+  --color-text-subtle:     var(--color-ink-400);
+  --color-text-on-accent:  #ffffff;
+
+  --color-border:          var(--color-paper-300);
+  --color-border-strong:   var(--color-paper-200);
+
+  --color-accent:          var(--color-rec-500);
+  --color-accent-hover:    #E02222;
+  --color-accent-active:   #C41A1A;
+  --color-accent-muted:    rgba(255, 45, 45, 0.18);
+
+  --color-text-disabled:   var(--color-ink-400);
+  --color-bg-disabled:     var(--color-paper-200);
+
+  --color-success:         #1B6B42;
+  --color-success-muted:   rgba(27, 107, 66, 0.12);
+  --color-warning:         #A85200;
+  --color-warning-muted:   rgba(168, 82, 0, 0.12);
+  --color-error:           var(--color-rec-500);
+  --color-error-muted:     var(--color-accent-muted);
+
+  --shadow-sm:    0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md:    0 1px 4px rgba(0, 0, 0, 0.12);
+  --shadow-focus: 0 0 0 6px rgba(255, 45, 45, 0.18);
+}
